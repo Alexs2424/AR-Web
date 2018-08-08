@@ -26,8 +26,8 @@
         a target.<br />
         Each item in the list object contains a couple of different sub elements: Title, subtitle, detail, button. <br />
         There are multiple attributes that you can control on each element, but for the time being it is a little simple. <br />
-        <h4>Attributes:</h4>
     </p>
+    <h4>Attributes:</h4>
     <div class="container">
         <div class="attributes">
             <p class="code">"list-num" : 3,<br />
@@ -52,18 +52,19 @@
                 "list-three-button-link" : ""
             </p>
         </div>
+        <h5 class="example-title">Example List Object:</h5>
         <img src="images/list-example.png" width="315px" height="378px" class="example"/>
     </div>
 
     <h3>Content Object&nbsp;<span class="indicator">2D</span></h3>
     <h4>type : "list"</h4>
-    <p>The contnet object is used when you wanna display content from another service and link to the web or deep link.<br />
+    <p>The content object is used when you wanna display content from another service and link to the web or deep link.<br />
         The most one singular list can hold is three at a time. You can however use more than list on
         a target.<br />
         Each item in the list object contains a couple of different sub elements: Title, subtitle, detail, button. <br />
         There are multiple attributes that you can control on each element, but for the time being it is a little simple. <br />
-        <h4>Attributes:</h4>
     </p>
+    <h4>Attributes:</h4>
     
     <!-- <img src="images/list.png" width="50%" height="50%" /> -->
     <!-- This is being used for rendering the homepage in python because it can only serve back one page.-->
@@ -72,6 +73,7 @@
             background-color: #f7f7f7;
             font-family: 'Open Sans', sans-serif;
             color: #606470;
+            margin-left: 16px;
         }
 
         h1 {
@@ -80,33 +82,45 @@
 
         h3 {
             font-weight: 600;
-            font-size: 24px;
+            font-size: 28px;
+            margin-bottom: -5px;
+        }
+
+        h4 {
+            font-size: 20px;
+            margin-bottom: 8px;
+            font-weight: 600;
+            margin-top: 8px;
+        }
+
+        p {
+            margin-top: 8px;
         }
 
         .base-attributes {
-            background-color: #393e46;
+            background-color: #202229;
             border-radius: 5px;
             height: 150px;
-            width: 425px;
+            width: 720px;
         }
 
         .attributes {
             margin-top: -5px;
             padding-top: 0px;
-            background-color: #393e46;
+            background-color: #202229;
             border-radius: 5px;
-            width: 750px;
-            height: 500px;
+            width: 720px;
+            height: 480px;
             float: left;
         }
 
         .code {
-            color: #6a9c78;
+            color: #3CAE44;
             font-family: 'Roboto Mono', monospace;
             margin-left: 28px;
-            padding-top: 20px;
+            padding-top: 20px; /* was 20, margintop is 16px */
             font-size: 16px;
-            margin-top: 16px;
+            margin-top: 0px;
         }
 
         .indicator {
@@ -116,11 +130,18 @@
         }
 
         .example {
-            float: right;
-            margin-top: 48px;
-            margin-left: 36px;
+            float: left;
+            margin-left: 24px;
             border-radius: 10px;
             border: #393e46 2px solid;
+        }
+
+        .example-title {
+            float: left;
+            margin-top: 24px;
+            margin-left: 24px;
+            margin-bottom: 8px;
+            font-size: 20px;
         }
 
         .container {
